@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Analytics</title>
+</head>
+<body>
+	<h1>Analytics</h1>
+	<form method="post">
+	    {% csrf_token %}
+	 
+	    <textarea rows=10 cols=50 name="user_input">{{user_input}}</textarea>
+	    <br>
+	    <label>{{resp}}</label>
+	    <br>
+	    <button type="submit">Submit</button>
+	 
+	 
+	  {% if "_640" in fname %}
+	     <img src="/media/{{fname}}" width="140px" height="100px">
+	  {% endif %}
+	</form>
+</body>
+</html>
+
+
